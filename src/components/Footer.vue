@@ -28,4 +28,10 @@ export default {
     color: #000000;
   }
 
+    @media screen and (max-width: 500px) {
+    .CustomFooter {
+       padding: 10px 20px;
+    }
+  }
+
 </style>

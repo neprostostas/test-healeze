@@ -22,6 +22,7 @@
           </div>
 
           <button class="testButton">Test Registration</button>
+          <button class="testButtonMobile">Reg</button>
 
           <img src="../assets/burger.svg" alt="burger">
 
@@ -62,7 +63,7 @@ export default {
     grid-template-columns: repeat(3, auto);
     justify-items: center;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     gap: 40px;
   }
 
@@ -125,7 +126,11 @@ export default {
     color: #000000;
   }
 
-  .testButton {
+  .testButtonMobile {
+    display: none;
+  }
+
+  .testButton, .testButtonMobile {
     background: #20B472;
     border: 1px solid #20B472;
     border-radius: 28px;
@@ -139,9 +144,56 @@ export default {
     padding: 22px 25px;
   }
 
-  .testButton:hover {
+  .testButton:hover, .testButtonMobile:hover {
     background: #0c824d;
     border: 1px solid #0c824d;
   }
+
+  @media screen and (max-width: 1288px) {
+
+    .testButton {
+      display: none;
+    }
+
+    .testButtonMobile {
+      padding: 12px 15px;
+      display: unset;
+    }
+
+  }
+
+  @media screen and (max-width: 835px) {
+
+    .buttonsBlock {
+      gap: 20px;
+    }
+
+    .socialMediaBlock {
+      display: none;
+    }
+
+    .buttonsBlock {
+      grid-template-columns: repeat(2, auto);
+    }
+
+    .headerWrapper {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      align-items: center;
+    }
+
+    .logoHealeze {
+      width: 100px;
+      height: unset;
+    }
+
+  }
+
+  @media screen and (max-width: 500px) {
+      .CustomHeader {
+      padding: 35px 20px 16px;
+    }
+  }
+
 
 </style>

@@ -44,9 +44,9 @@ export default {
 <style scoped>
 
   .xlImageWrapper {
-    z-index: -10;
+    z-index: -1;
     position: fixed;
-    top: 30%;
+    /* top: 30%; */
     right: 0;
     bottom: 0;
   }
@@ -80,7 +80,7 @@ export default {
     font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: 400;
-    font-size: 23.4313px;
+    font-size: 1.5vw;
     line-height: 26px;
     text-transform: uppercase;
     color: #000000;
@@ -103,6 +103,36 @@ export default {
     cursor: pointer;
     color: #29ABE2;
     transition: .5s all ease-in-out;
+  }
+
+  @media screen and (min-width: 935px) {
+    .xlImageWrapper {
+      top: 130px;
+    }
+  }
+
+  @media screen and (max-width: 835px) {
+    .textFirst {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .CustomMain {
+       padding: 74px 20px 0;
+    }
+
+    .mainImages {
+      padding-top: 82px;
+    }
+
+    .textFirst {
+      padding-top: 30px;
+    }
+
+    .textWrapper {
+      padding: 15px 0;
+    }
   }
 
 </style>

@@ -2,7 +2,7 @@
   <div class="textLine">
 
     <div class="textWrapper">
-       <p>{{txt}}</p>
+       <p class="line">{{txt}}</p>
     </div>
 
     <div class="arrowWrapper">
@@ -28,6 +28,10 @@ export default {
 
 <style scoped>
 
+    .line {
+      font-size: 4vw;
+    }
+
     .textLine {
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -39,8 +43,10 @@ export default {
 
     .arrowWrapper {
         display: grid;
-        width: 86px;
-        height: 86px;
+        /* width: 86px;
+        height: 86px; */
+        width: 5vw;
+        height: 5vw;
         border: 1px solid #E6E6E6;
         border-radius: 50%;
     }
@@ -58,6 +64,19 @@ export default {
     .textWrapper svg {
         align-self: center;
         margin: 0 auto;
+        width: 2vw;
+        height: 2vw;
+    }
+
+    @media screen and (max-width: 835px) {
+      .line {
+        font-size: 30px;
+      }
+
+      .arrowWrapper {
+        width: 35px;
+        height: 35px;
+      }
     }
 
 </style>

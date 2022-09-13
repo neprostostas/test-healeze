@@ -23,8 +23,12 @@ body, h1, h2, h3, h4, h5, p {
   margin: 0;
 }
 
-img, button {
+button {
   cursor: pointer;
+}
+
+* {
+  /* transition: .5s all ease-in-out; */
 }
 
 </style>
