@@ -42,13 +42,18 @@ export default {
 <style scoped>
 
   .CustomHeader {
+    position: fixed;
     padding: 35px 71px 16px;
-    border-bottom: .5px solid grey;
+    border-bottom: 0.5px solid grey;
+    background: #FFFFFF;
+    z-index: 99;
+    left: 0;
+    right: 0;
   }
 
   .headerWrapper {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 33.3333%);
     align-items: center;
   }
 

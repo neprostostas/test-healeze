@@ -1,10 +1,6 @@
 <template>
   <div class="CustomMain">
 
-    <div class="xlImageWrapper">
-      <img src="../assets/lg-pic.png" alt="lg-pic">
-    </div>
-
     <div class="mainImages">
       <img src="../assets/xs-pic-1.png" alt="xs-pic-1">
       <img src="../assets/xs-pic-2.png" alt="xs-pic-2">
@@ -20,6 +16,10 @@
         </template>
       </div>
 
+    </div>
+
+    <div class="xlImageWrapper">
+      <img src="../assets/lg-pic.png" alt="lg-pic">
     </div>
 
   </div>
@@ -44,9 +44,15 @@ export default {
 <style scoped>
 
   .xlImageWrapper {
-    position: absolute;
-    top: 15%;
+    z-index: -10;
+    position: fixed;
+    top: 30%;
     right: 0;
+    bottom: 0;
+  }
+
+  .xlImageWrapper img {
+    width: 50vw;
   }
 
   .CustomMain {
@@ -60,6 +66,7 @@ export default {
     align-items: center;
     justify-items: center;
     gap: 15px;
+    padding-top: 132px;
   }
 
   .mainImages img:hover {
